@@ -1,0 +1,49 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+
+  svg {
+    margin-right: 10px;
+  }
+
+  .header-content-wrapper {
+    background-color: #7b62f9;
+    height: 40px;
+
+    .header-content {
+      height: inherit;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      font-family: 'Nunito SemiBold';
+      font-size: 18px;
+    }
+  }
+
+  .header-search-wrapper {
+    background-color: #ffffff;
+    height: 86px;
+
+    .header-search {
+      height: inherit;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .ant-form-item {
+        margin: 0;
+      }
+
+      .header-search-input {
+        width: 500px;
+      }
+    }
+  }
+}
