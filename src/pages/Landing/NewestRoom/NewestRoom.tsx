@@ -20,6 +20,7 @@ const NewestRoom: React.FC = () => {
         size: 3,
       }
       const response = await getRoom(params)
+      console.log(response.data.content)
       setRoomList(response.data.content)
     } catch (error) {
       console.log(error)

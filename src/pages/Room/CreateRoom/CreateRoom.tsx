@@ -25,6 +25,14 @@ interface ISteps {
   content: JSX.Element
 }
 
+const srcImage = [
+  'https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/290170403.jpg?k=e05bebe1118dfe44249257a457c891f4ca07b78f18773cea28098d2098857cf5&o=',
+  'https://www.vietnambooking.com/wp-content/uploads/2018/06/tieu-chuan-xep-hang-sao-khach-san-4-1-2019-e1578107835581.jpg',
+  'https://inhat.vn/wp-content/uploads/2020/11/khach-san-pho-co-o-ha-noi2.jpg',
+  'https://thiennhuong.com/wp-content/uploads/2022/03/khach-san-thu-binh-duong-1.jpg',
+  'https://allimages.sgp1.digitaloceanspaces.com/phuotorg/2020/10/1601605166_20-khach-san-nha-nghi-Binh-Duong-gia-re-dep.jpg',
+]
+
 const CreateRoom: React.FC = () => {
   const [current, setCurrent] = useState(0)
   const [form] = Form.useForm()
@@ -108,6 +116,7 @@ const CreateRoom: React.FC = () => {
           streetName: values.streetName,
           houseNumber: values.houseNumber,
         },
+        imageUrl: srcImage[Math.floor(Math.random() * 4)],
         utilities: utilities,
       }
       const response = await createRoom(body)

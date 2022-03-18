@@ -1,6 +1,11 @@
 import React from 'react'
 import './RoomCard.less'
-import image from '../../../../assets/images/SB-ATL-ZookHome-9-e1538165814448.jpg'
+// import image1 from '../../../../assets/images/SB-ATL-ZookHome-9-e1538165814448.jpg'
+// import image2 from '../../../../assets/images/1.jpg'
+// import image3 from '../../../../assets/images/2.jpg'
+// import image4 from '../../../../assets/images/3.jpg'
+
+// const images = [image1, image2, image3, image4]
 
 import { urlRoomNameConvert, currencyConvert } from '../../../../utils/convert'
 
@@ -14,7 +19,7 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 const RoomCard: React.FC = (props: any) => {
   return (
     <div className='room-card-wrapper'>
-      <img src={image} className='room-card-image' />
+      <img src={props.imageUrl} className='room-card-image' />
       <div className='room-card-content'>
         <div className='room-card-content-address'>{props.roomInformation.name}</div>
         <div className='room-card-content-city'>

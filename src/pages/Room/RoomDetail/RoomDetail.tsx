@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import './RoomDetail.less'
 
-import image from '../../../assets/images/SB-ATL-ZookHome-9-e1538165814448.jpg'
+import image1 from '../../../assets/images/SB-ATL-ZookHome-9-e1538165814448.jpg'
+import image2 from '../../../assets/images/1.jpg'
+import image3 from '../../../assets/images/2.jpg'
+import image4 from '../../../assets/images/3.jpg'
+
+const images = [image1, image2, image3, image4]
 import avatar from '../../../assets/images/Avatar.jpg'
 
 import { currencyConvert } from '../../../utils/convert'
@@ -22,7 +27,7 @@ const { Title, Text, Paragraph } = Typography
 const RoomDetail: React.FC = (props: any) => {
   const [isModalVisible, setIsModalVisible] = useState(false)
   const [room, setRoom] = useState<any>(null)
-
+  const a = images[Math.floor(Math.random() * 4)]
   const getRoom = async () => {
     try {
       const response = await getRoomById(props.match.params.id)
@@ -57,23 +62,23 @@ const RoomDetail: React.FC = (props: any) => {
           <Image.PreviewGroup>
             <Row className='room-detail-image'>
               <Col span={12}>
-                <Image src={image} />
+                <Image src={room.imageUrl} />
               </Col>
               <Col span={12}>
                 <Row>
                   <Col span={12}>
-                    <Image src={image} />
+                    <Image src={room.imageUrl} />
                   </Col>
                   <Col span={12}>
-                    <Image src={image} />
+                    <Image src={room.imageUrl} />
                   </Col>
                 </Row>
                 <Row>
                   <Col span={12}>
-                    <Image src={image} />
+                    <Image src={room.imageUrl} />
                   </Col>
                   <Col span={12}>
-                    <Image src={image} />
+                    <Image src={room.imageUrl} />
                   </Col>
                 </Row>
               </Col>
