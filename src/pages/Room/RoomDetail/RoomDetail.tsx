@@ -60,28 +60,28 @@ const RoomDetail: React.FC = (props: any) => {
       {room != null && (
         <div className='room-detail-wrapper container'>
           <Image.PreviewGroup>
-            <Row className='room-detail-image'>
-              <Col span={12} style={{ objectFit: 'contain' }} offset={6}>
+            <Row className='room-detail-image' align='middle' justify='center'>
+              <Col span={12} style={{ width: '200%', overflow: 'hidden' }}>
                 <Image src={room.imageUrl} />
               </Col>
-              {/* <Col span={12}>
-                <Row>
-                  <Col span={12}>
-                    <Image src={room.imageUrl} />
-                  </Col>
-                  <Col span={12}>
-                    <Image src={room.imageUrl} />
-                  </Col>
-                </Row>
-                <Row>
-                  <Col span={12}>
-                    <Image src={room.imageUrl} />
-                  </Col>
-                  <Col span={12}>
-                    <Image src={room.imageUrl} />
-                  </Col>
-                </Row>
-              </Col> */}
+              {/*<Col span={12}>*/}
+              {/*  <Row gutter={[0, 0]}>*/}
+              {/*    <Col span={12}>*/}
+              {/*      <Image src={room.imageUrl} />*/}
+              {/*    </Col>*/}
+              {/*    <Col span={12}>*/}
+              {/*      <Image src={room.imageUrl} />*/}
+              {/*    </Col>*/}
+              {/*  </Row>*/}
+              {/*  <Row>*/}
+              {/*    <Col span={12}>*/}
+              {/*      <Image src={room.imageUrl} />*/}
+              {/*    </Col>*/}
+              {/*    <Col span={12}>*/}
+              {/*      <Image src={room.imageUrl} />*/}
+              {/*    </Col>*/}
+              {/*  </Row>*/}
+              {/*</Col>*/}
             </Row>
           </Image.PreviewGroup>
 
@@ -120,7 +120,7 @@ const RoomDetail: React.FC = (props: any) => {
             <Col span={16} className='room-information'>
               <Card>
                 <Title level={4}>
-                  <FontAwesomeIcon icon={faHome} style={{ color: '#7b62f9' }} />
+                  <FontAwesomeIcon icon={faHome} style={{ color: '#3b82f6' }} />
                   Thông tin phòng
                 </Title>
                 <Row style={{ marginTop: '24px' }}>
@@ -188,7 +188,7 @@ const RoomDetail: React.FC = (props: any) => {
                 </Title>
                 <Row>
                   <Col span={5}>
-                    <Avatar src={avatar} size={64} />
+                    <Avatar size={64}>{room.user.info.lastName.charAt(0)}</Avatar>
                   </Col>
                   <Col span={19}>
                     <div>

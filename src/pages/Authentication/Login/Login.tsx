@@ -86,7 +86,7 @@ const Login: React.FC = () => {
               </Button>
               <div style={{ fontSize: '16px' }}>
                 Hoặc &nbsp;
-                <Link to='register' style={{ color: '#7b62f9' }}>
+                <Link to='register' style={{ color: '#3b82f6' }}>
                   Đăng ký ngay tại đây!
                 </Link>
               </div>

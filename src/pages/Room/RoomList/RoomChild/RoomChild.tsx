@@ -25,7 +25,7 @@ const RoomChild: React.FC = (props: any) => {
     <div className='room-child-wrapper'>
       <Row gutter={24}>
         <Col span={6}>
-          <img src={image} className='room-child-image' />
+          <img src={props.imageUrl} className='room-child-image' />
         </Col>
         <Col span={14}>
           <div className='room-child-information'>

@@ -42,7 +42,7 @@ const Profile: React.FC = () => {
     <Card style={{ marginTop: '150px' }}>
       <Row gutter={16} style={{ margin: '5px' }}>
         <Col span={3}>
-          <Avatar src={avatar} size={128} />
+          <Avatar size={128}>{profile?.lastName.charAt(0)}</Avatar>
         </Col>
         <Col span={9} style={{ borderRight: '1px solid #F0F0F0' }}>
           <Title level={3}>

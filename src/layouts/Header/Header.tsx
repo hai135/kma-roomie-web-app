@@ -75,7 +75,7 @@ const HeaderMenu: React.FC = () => {
         <Text>
           <Link to={PATH.ROOM.CREATE_ROOM} style={{ marginRight: '40px', color: '#fff' }}>
             <FontAwesomeIcon icon={faPlusCircle} />
-            Đăng phòng dễ dàng
+            Đăng phòng
           </Link>
         </Text>
         <Text>
@@ -178,7 +178,7 @@ const Header: React.FC = () => {
                 </Form.Item>
                 <Form.Item>
                   <Button type='ghost' size='large' htmlType='submit'>
-                    <FontAwesomeIcon icon={faSearch} style={{ color: '#7b62f9' }} />
+                    <FontAwesomeIcon icon={faSearch} style={{ color: '#3b82f6' }} />
                     Tìm kiếm
                   </Button>
                 </Form.Item>

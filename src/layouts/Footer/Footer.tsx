@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
       <div className='dash container'></div>
       <Row className='container text' justify='space-between'>
         <Text>Điều khoản và chính sách</Text>
-        <Text>Copyright © ACH - 2020 All Rights Reserved</Text>
+        <Text>Copyright © 3THD - 2022 All Rights Reserved</Text>
       </Row>
     </Layout.Footer>
   )

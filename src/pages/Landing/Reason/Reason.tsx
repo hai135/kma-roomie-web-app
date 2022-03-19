@@ -56,7 +56,7 @@ const Reason: React.FC = () => {
   ]
   return (
     <div className='reason-wrapper'>
-      <div className='reason-title'>Tại sao lại chọn Roomie</div>
+      <div className='reason-title'>Tại sao lại chọn YouRoom</div>
       <div className='container'>
         <Row justify='space-between' wrap gutter={[0, 100]}>
           {data.map((element, index) => {

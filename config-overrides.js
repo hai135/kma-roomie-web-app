@@ -14,7 +14,7 @@ module.exports = override(
         '@layout-body-background': '#FFFFFF',
         '@layout-header-background': '#FFFFFF',
         '@layout-footer-background': '#FFFFFF',
-        '@primary-color': '#7b62f9',
+        '@primary-color': '#3b82f6',
       },
     },
   })
