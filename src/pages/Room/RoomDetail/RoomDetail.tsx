@@ -61,10 +61,10 @@ const RoomDetail: React.FC = (props: any) => {
         <div className='room-detail-wrapper container'>
           <Image.PreviewGroup>
             <Row className='room-detail-image'>
-              <Col span={12}>
+              <Col span={12} style={{ objectFit: 'contain' }} offset={6}>
                 <Image src={room.imageUrl} />
               </Col>
-              <Col span={12}>
+              {/* <Col span={12}>
                 <Row>
                   <Col span={12}>
                     <Image src={room.imageUrl} />
@@ -81,7 +81,7 @@ const RoomDetail: React.FC = (props: any) => {
                     <Image src={room.imageUrl} />
                   </Col>
                 </Row>
-              </Col>
+              </Col> */}
             </Row>
           </Image.PreviewGroup>
 

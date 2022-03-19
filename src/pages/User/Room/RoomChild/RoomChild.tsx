@@ -27,7 +27,7 @@ const { Title, Text } = Typography
 
 const RoomChild: React.FC = (props: any) => {
   const { price, unit } = currencyConvert(props.roomExpense.rentalPrice)
-
+  console.log(props)
   let gender
   if (props.roomInformation.gender == 1) {
     gender = 'Nam hoặc Nữ'
@@ -53,7 +53,7 @@ const RoomChild: React.FC = (props: any) => {
     <div className='room-child-wrapper'>
       <Row gutter={24}>
         <Col span={6}>
-          <img src={image} className='room-child-image' />
+          <img src={props.imageUrl} className='room-child-image' />
         </Col>
         <Col span={11}>
           <div className='room-child-information'>
